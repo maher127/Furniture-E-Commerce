@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Mali", cursive;
+}
+
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.btn-yellow:hover {
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainBlack);
+}
+
+.btn-black:hover {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+
+.delet-icon {
+  display: inline;
+  margin-left: 2rem;
+  color: var(--mainGrey);
+}
+
+.delet-icon:hover {
+  color: var(--mainGrey);
+}
+
+/* **********************Home page********************** */
+/* Navbar */
+.navbar-toggler {
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainYellow) !important;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  /* border-bottom: 0.1rem solid var(--mainWhite); */
+}
+
+.nav-active {
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+
+.nav-icons {
+  font-size: 1.6rem;
+}
+
+.navbar-cart-icon {
+  color: var(--mainBlack);
+  position: relative;
+}
+
+.navbar-cart-icon:hover {
+  color: var(--mainGrey);
+}
+
+.cart-items {
+  position: absolute;
+  top: -18%;
+  right: -25%;
+  background-color: var(--mainYellow);
+  border-radius: 50%;
+  width: 1.4rem;
+  font-size: 0.8rem;
+}
+
+.cart-items {
+  text-align: center;
+}
+
+/* Banner */
+.banner {
+  height: calc(100vh - 101px);
+  background: url("../img/pageBcg/bannerBcg.jpeg") center center/cover no-repeat fixed;
+}
+
+.btn-yellow {
+  background: var(--mainYellow);
+  border-radius: 0.2rem;
+  color: var(--mainBlack);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: all 0.4s;
+}
+
+
+/* End of Banner */
+/* Service Section */
+
+.service-icon {
+  background: var(--mainGrey);
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--mainYellow);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* End of Service Section */
+/* Categories */
+.categories-link {
+  color: var(--mainBlack);
+}
+
+.categories-link:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+
+.categories-underline,
+.products-categories-underline {
+  width: 30%;
+  height: 2px;
+  background: var(--mainYellow);
+}
+
+.categorie-container {
+  position: relative;
+  transition: all 1s linear;
+  opacity: 1;
+}
+
+.categorie-link {
+  position: absolute;
+  background: var(--mainWhite);
+  left: 0%;
+  top: 70%;
+  padding: 0.2rem 3rem 0.2rem 0.2rem;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transition: all 1s linear;
+  text-decoration: none !important;
+  color: var(--mainBlack);
+}
+
+.categorie-link:hover {
+  color: var(--mainGrey);
+
+}
+
+.categorie-container:hover .categorie-link {
+  opacity: 1;
+}
+
+.category-img {
+  transition: all 1s linear;
+}
+
+.categorie-container:hover .category-img {
+  opacity: 0.5;
+}
+
+/* home filler */
+.home-fillier {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-filler.jpeg") center/cover no-repeat fixed;
+}
+
+.collection-link {
+  color: var(--mainYellow);
+}
+
+.collection-link:hover {
+  text-decoration: none;
+  color: var(--mainGrey);
+}
+
+.collection-underline {
+  width: 5rem;
+  height: 0.1rem;
+  background: var(--mainYellow);
+  margin: 0 auto;
+}
+
+/* End of home filler */
+
+/* End of Categories */
+/* Section Featured Products */
+.feature-container {
+  background-color: var(--TransGrey);
+  position: relative;
+  overflow: hidden;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.featured-search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: var(--mainWhite);
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+
+.feature-container:hover .featured-search-icon {
+  transform: translateX(0%);
+}
+
+.feature-container:hover .feature-store-link {
+  transform: translateX(0%);
+}
+
+.feature-store-link {
+  position: absolute;
+  background-color: var(--mainYellow);
+  padding: 0.2rem 0.4rem;
+  color: var(--mainBlack);
+  right: 0%;
+  top: 70%;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+
+.feature-store-link:hover {
+  color: var(--mainBlack);
+}
+
+/* end of Section Featured Products */
+
+/* Partners */
+.partners {
+  background: var(--TransGrey);
+}
+
+.carousel-control-prev {
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+  transform: translateX(-200%);
+}
+
+.carousel-control-next {
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+  transform: translateX(200%);
+}
+
+/* end of Partners */
+/* Skills */
+.skills {
+  background-color: var(--mainBlack);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: var(--mainYellow);
+
+}
+
+/* End of Skills */
+/* Footer */
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.footer-title {
+  color: var(--mainYellow);
+  text-align: center;
+  border: 0.2rem solid var(--mainYellow);
+  padding: 0.4rem;
+  display: inline-block;
+}
+
+.footer-icon {
+  font-size: 1rem;
+  color: var(--mainYellow);
+}
+
+.footer-icon:hover {
+  color: var(--mainWhite);
+}
+
+/* End of footer */
+/*************************Page Products *************************/
+.banner-products {
+  min-height: 60vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("../img/pageBcg/productsBcg.jpeg") center/cover no-repeat fixed;
+
+}
+
+/* End of Page Products */
+/* **********************Store page********************** */
+.banner-store {
+  min-height: 60vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("../img/pageBcg/storeBcg.jpeg") center/cover no-repeat fixed;
+
+}
