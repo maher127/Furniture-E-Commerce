@@ -43,9 +43,10 @@ body {
 }
 
 .delet-icon {
-  display: inline;
   margin-left: 2rem;
-  color: var(--mainGrey);
+  color: var(--mainBlack);
+  font-size: 1.4rem;
+  margin-top: -0.4rem;
 }
 
 .delet-icon:hover {
@@ -100,7 +101,8 @@ body {
 /* Banner */
 .banner {
   height: calc(100vh - 101px);
-  background: url("../img/pageBcg/bannerBcg.jpeg") center center/cover no-repeat fixed;
+  background: url("../img/pageBcg/bannerBcg.jpeg") center center/cover no-repeat
+    fixed;
 }
 
 .btn-yellow {
@@ -111,7 +113,6 @@ body {
   font-size: 1.2rem;
   transition: all 0.4s;
 }
-
 
 /* End of Banner */
 /* Service Section */
@@ -165,7 +166,6 @@ body {
 
 .categorie-link:hover {
   color: var(--mainGrey);
-
 }
 
 .categorie-container:hover .categorie-link {
@@ -280,7 +280,6 @@ body {
 .skill-icon {
   font-size: 2rem;
   color: var(--mainYellow);
-
 }
 
 /* End of Skills */
@@ -311,16 +310,20 @@ footer {
 /*************************Page Products *************************/
 .banner-products {
   min-height: 60vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
     url("../img/pageBcg/productsBcg.jpeg") center/cover no-repeat fixed;
-
 }
 
 /* End of Page Products */
 /* **********************Store page********************** */
 .banner-store {
   min-height: 60vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
     url("../img/pageBcg/storeBcg.jpeg") center/cover no-repeat fixed;
-
 }
